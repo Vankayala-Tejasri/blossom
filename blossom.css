@@ -1,0 +1,580 @@
+#header{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:5px 40px;
+	background:linear-gradient(pink,violet,hotpink);
+	box-shadow:0 5px 15px rgba(0,0,0,0.06);
+	position:sticky;
+	top:0;
+	left:0;
+}
+#navbar{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+#navbar li{
+	list-style:none;
+	padding:0 20px;
+	position:relative;
+}
+#navbar li a{
+	text-decoration:none;
+	font-size:16px;
+	font-weight:200;
+	color:white;
+	transistion:0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a:active{
+	color:black;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after
+{
+	content:"";
+	width:30%;
+	height:2px;
+	background:black;
+	position:absolute;
+	bottom:-4px;
+	left:20px
+}
+#mobile{
+	display:none;
+	align-items:center;
+}
+#hero{
+	background-image:url("https://content.farmasi.ca/Product/PK91021_400.jpg");
+	width:800px;
+	height:500px;
+	background-size:400px; 
+	background-repeat:no-repeat;
+	background-position:top 25% right 0%;
+	padding:0 80px;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	justify-content:flex-start;
+
+}
+#hero h4{
+	padding-bottom: 15px;
+	font-family:garamond,serif;
+	font-size:30px;
+}
+#hero h1{
+	font-size:30px;
+	color:#964B00;
+	font-family:garamond ,serif;
+}
+#hero h2,p{
+	font-size:30px;
+	font-family:garamond,serif;
+}
+#hero button{
+	font-family:garamond,serif;
+	font-size:15px;
+	background-color:#FFFDD0;
+	color:black;
+	padding:14px 80px 14px 65px;
+	border-radius:4%;
+	cursor:pointer;
+	font-weight:500;
+	font-size:15px;
+}
+.section-p1{
+	padding:30px 70px;
+}
+#feature{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+#feature .my-feu{
+	width:150px;
+	text-align:center;
+	padding:30px 10px;
+	box-shadow:20px 20px 34px rgba(0,0,0,0.03);
+	background-color:white;
+	border:1px solid grey;
+	border-radius:4px;
+	margin:15px 0;
+}
+#feature .my-feu:hover{
+	box-shadow:10px 10px 54px rgba(70,62,221,0.1);
+}
+#feature .my-feu img{
+	width:100%;
+	margin-bottom:10px;
+}
+#feature .my-feu h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	display:inline-block;
+	padding:9px 8px 6px 8px;
+	line-height:1;
+	border:1px solid pink;
+	border-radius:4px;
+	color:brown;
+	background-color:pink;
+}
+#feature .my-feu:nth-child(2) h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	background-color:#90EE90;
+}
+#feature .my-feu:nth-child(3) h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	background-color:#FFFFE0;
+}
+#feature .my-feu:nth-child(4) h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	background-color:orange;
+}
+#feature .my-feu:nth-child(5) h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	background-color:#FFCCCB;
+}
+#feature .my-feu:nth-child(6) h4{
+	font-family:garamond,serif;
+	font-size:18px;
+	background-color:#E6E6FA;
+}
+#product1{
+	text-align:center;
+	font-size:30px;
+	font-family:garamond,serif;
+}
+#product1 .pro-container{
+	display:flex;
+	justify-content:space-between;
+	padding-top:20px;
+	flex-wrap:wrap;
+}
+
+#product1 .pro-container{
+	display:grid;
+	grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));
+	gap:0.5rem;
+}
+#product1 .pro-container .pro{
+	width:200px;
+	height:370px;
+	padding:30px 10px;
+	background:white;
+	border-radius:.1rem;
+	border:0.5rem solid rgba(0,0,0,.2);
+	position:relative;
+	overflow:hidden;
+	text-align:center;
+}
+#product1 .pro:hover{
+	box-shadow:20px 20px 30px rgba(0,0,0,0.06);
+}
+	
+#product1 .pro img{
+	width:100%;
+	border:1px solid grey;
+	border-radius:50%;
+}
+#product1 .pro .des{
+	text-align:start;
+	padding:10px 0
+}
+#product1 .pro .des span{
+	color:black;
+	font-size:17px;
+}
+#product1 .pro .des h5{
+	padding-top:7px;
+	font-size:15px;
+}
+#product1 .pro .des i{
+	font-size: 12px;
+	color:#FFC000;
+}
+#product1 .pro .des h4{
+	padding-top:7px;
+	font-size:15px;
+	font-weight:400;
+}
+#product1 .pro .fa-shopping-bag{
+	font-size:20px;
+	width:40px;
+	height:40px;
+	line-height:30px;
+	border:1px solid grey;
+	border-radius:50px;
+	background-color:white;
+	color:black;
+	position:absolute;
+	bottom:20px;
+	right:10px;
+}
+#product1 .pro .fa-shopping-bag:hover{
+	background-color:pink;
+}
+.section-m1{
+	margin:40px 0;
+}
+button.normal{
+	font-size:14px;
+	font-weight:400;
+	padding:15px 30px;
+	background-color:#FFFDD0;
+	border:1px solid grey;
+	border-radius:15%;
+	cursor:pointer;
+	transition:0.2s;
+}
+#banner{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	font-family:garamond,serif;
+	align-items:center;
+	text-align:center;
+	background-image:url("https://thumbs.dreamstime.com/b/composition-makeup-products-christmas-decor-table-composition-makeup-products-christmas-decor-table-space-130000286.jpg");
+    width:100%;
+	height:50vh;
+	background-size:1200px;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+#banner h4{
+	font-size:20px;
+}
+#banner h2{
+	font-size:25px;
+	padding:10px 0;
+} 
+#banner h5{
+	font-size:18px;
+	padding:10px;
+}
+#banner button:hover{
+	background-color:grey;
+	color:white;
+}
+#sim{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+#sim .banner-box{
+	display:flex;
+	flex-direction:column;
+	font-family:garamond,serif;
+	align-items:flex-start;
+	background-image:url("https://imageio.forbes.com/specials-images/imageserve/1132350479/Organic-and-natural-cosmetics/960x0.jpg?format=jpg&width=960");
+    min-width:450px;
+	height:50vh;
+	background-size:cover;
+	background-position:center;
+	padding:30px;
+	border:1px solid grey;
+	border-radius:2%;
+	
+}
+#sim .banner-box2{
+	background-image:url("https://cdn.shopify.com/s/files/1/1338/0845/products/2357739880530-Rose-FaceMilk1-Rose-1.jpg?v=1668559401");
+	min-width:450px;
+	height:50vh;
+	background-size:cover;
+	background-position:center;
+	font-family:garamond,serif;
+	padding:30px;
+	border:1px solid grey;
+	border-radius:2%;
+
+}
+
+button.white{
+	font-family:garamond,serif;
+	font-size:16px;
+	font-weight:1000;
+	padding:13px 18px;
+	background-color:#FFFDD0;
+	border:1px solid grey;
+	border-radius:2%;
+	outline:none;
+	cursor:pointer;
+	transition:0.2s;
+}
+#sim .banner-box:hover button{
+	background:pink;
+	border:1px solid grey;
+}
+button.white2{
+	font-family:garamond,serif;
+	font-size:16px;
+	font-weight:1000;
+	padding:13px 18px;
+	background-color:#FFFDD0;
+	border:1px solid grey;
+	border-radius:2%;
+	outline:none;
+	cursor:pointer;
+	transition:0.2s;
+}
+#sim .banner-box2:hover button{
+	background:pink;
+	border:1px solid grey;
+}
+#banner3{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:wrap;
+	padding:0 50px;
+}
+#banner3 .banner-box{
+	background-image:url("https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fwp-content%2Fblogs.dir%2F6%2Ffiles%2F2020%2F11%2Ffenty-beauty-rihanna-diamond-bomb-all-over-veil-highlighter-rose-rave-royal-icing-new-colorways-price-release-date-1.jpg?q=75&w=800&cbr=1&fit=max");
+	min-width:28%;
+	height:40vh;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:left;
+	font-family:garamond,serif;
+	padding:20px;
+	margin-bottom:20px;
+	border:1px solid grey;
+	border-radius:4%;
+}
+
+
+#banner3 .banner-box1{
+	background-image:url("https://static.toiimg.com/thumb/msid-78331327,width-1280,height-720,resizemode-4/.jpg");
+	min-width:28%;
+	height:40vh;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:left;
+	font-family:garamond,serif;
+	padding:20px;
+	margin-bottom:20px;
+	border:1px solid grey;
+	border-radius:4%;
+}
+#banner3 .banner-box2{
+	background-image:url("https://cdn.shopify.com/s/files/1/0562/2068/0362/products/Onion-and-argan-combo_02_200ml.jpg?v=1651552928");
+	min-width:28%;
+	height:40vh;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:left;
+	font-family:garamond,serif;
+	padding:20px;
+	margin-bottom:20px;
+	border:1px solid grey;
+	border-radius:4%;
+}
+#newsletter{
+	display:flex;
+	justify-content:space-between;
+	flew-wrap:wrap;
+	align-items:center;
+	background:linear-gradient(pink,violet,hotpink);
+	min-width:350px;
+	height:20vh;
+	background-size:cover;
+	background-color:white;
+}
+#newsletter h4{
+	font-family:garamond,serif;
+	font-size:25px;
+}
+#newsletter p{
+	font-weight:300px;
+	font-family:garamond,serif;
+	font-size:20px;
+}
+#newsletter input{
+	font-family:garamond,serif;
+	font-size:20px;
+	height:3.125rem;
+	padding:01.25em;
+	font-size:14px;
+	width:200%;
+	border:1px solid transparent;
+	border-radius:4px;
+	outline:none;
+	border-top-right-radius:0;
+	border-bottom-right-radius:0;
+	
+}
+#newsletter button{
+	border:1px solid grey;
+	border-radius:4px;
+	outline:none;
+	font-family:garamond,serif;
+	font-size:15px;
+	background-color:grey;
+	color:white;
+	white-space:nowrap;
+	border-top-left-radius:0;
+	border-bottom-left-radius:0;
+}
+#newsletter .form{
+	display:flex;
+	width:40%;
+}
+.col h4{
+	font-family:garamond,serif;
+	font-size:25px;
+}
+.col p{
+	font-family:garamond,serif;
+	font-size:18px;
+}
+footer{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+footer .col{
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	margin-bottom:20px;
+}
+footer .logo{
+	margin-bottom:20px;
+}
+footer h4{
+	font-family:garamond,serif;
+	font-size:14px;
+	padding-bottom:20px;
+}
+footer p{
+	font-family:garamond,serif;
+	font-size:15px;
+	margin:0 0 8px 0;
+}
+footer a{
+	font-family:garamond,serif;
+	font-size:18px;
+	color:black;
+	text-decoration:none;
+	margin:0 0 8px 0;
+}
+footer .follow{
+	margin-top:20px;
+}
+footer .follow i{
+	padding-right:4px;
+	cursor:pointer;
+}
+footer .follow i:hover,
+footer a:hover{
+	color:pink;
+}
+footer .copyright{
+	font-size:20px;
+	width:100%;
+	text-align:center;
+}
+#page-header{
+	background-image:url("https://www.trustt.io/wp-content/uploads/2022/04/Les-normes-des-cosmetiques-bio.png");
+	min-width:60%;
+	height:85vh;
+	background-size:cover;
+	background-position:center;
+	display:flex;
+	justify-content:top;
+	text-align:center;
+	flex-direction:column;
+	padding:14px
+}
+#page-header h4{
+	font-family:garamond,serif;
+	font-size:40px;
+}
+#page-header p{
+	font-family:garamond,serif;
+	font-size:30px;
+}
+#pagenumber{
+	text-align:center;
+}
+#pagenumber a{
+	text-decoration:none;
+	background-color:grey;
+	padding:15px 20px;
+	border:1px solid grey;
+	border-radius:4px;
+	color:white;
+	font-weight:600;
+}
+#pagenumber a i{
+	font-size:10px;
+	font-weight:600;
+}
+#productdetails{
+	display:flex;
+	margin-right:20px;
+}
+#productdetails .single-pro-details{
+	width:50%;
+	padding-top:30px;
+}
+#loginpage{
+	width:350px;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	position:absolute;
+	color:balck;
+}
+#loginpage h2{
+	font-family:garamond,serif;
+	font-size:40px;
+	text-align:center;
+	margin:40px 0;
+
+}
+#loginpage label{
+	font-family:garamond,serif;
+	font-size:25px;
+	margin:15px 0;
+
+}
+#loginpage input{
+	width:85%;
+	font-family:garamond,serif;
+	font-size:15px;
+	padding:10px 5px;
+	border:1px solid grey;
+	border-radius:4px;
+}
+#loginpage .butn{
+	display:flex;
+	justify-content:space-between;
+}
+#loginpage .butn input{
+	display:block;
+	font-family:garamond,serif;
+	font-size:15px;
+	margin:20px 0;
+	padding:10px 5px;
+	width:25%;
+	border:1px solid grey;
+	border-radius:4px;
+}
+#loginpage .butn p{
+	font-size:20px;
+	font-family:garamond,serif;
+}
+#loginpage .butn p a{
+	font-size:20px;
+	font-family:garamond,serif;
+}
+	
+	
+	

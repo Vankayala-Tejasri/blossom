@@ -1,0 +1,42 @@
+<html>
+<link rel="stylesheet" href="reg2.css">
+<section id="regform">
+<div class="container">
+<h1 class="form-title">Registration Form</h1>
+
+<form action="field.py" method="post">
+<div class="main-user-info">
+<div class="user-input-box">
+<label>Username</label>
+<input type="text" name="Username" placeholder="Username" required>
+</div>
+<div class="user-input-box">
+<label>E-mail</label>
+<input type="email" name="Email" placeholder="E-mail" required>
+</div>
+<div class="user-input-box">
+<label>Password</label>
+<input type="password" name="Password" placeholder="Password" required>
+</div>
+<div class="user-input-box">
+<label>Confirm-Password</label>
+<input type="password" name="Confirm_Password" placeholder="Confirm-Password" required>
+</div>
+<div class="user-input-box">
+<label>Phone-Number</label>
+<input type="text" name="Phone_Number" size="10" placeholder="+91" required>
+</div>
+</div>
+<div class="gender-details-box">
+<label class="gender-title">Gender</label>
+<div class="gen">
+<input type="radio" name="Gender" value="Female" checked>Female
+<input type="radio" name="Gender" value="Male" >Male
+<input type="radio" name="Gender" value="Other" >Other
+</div>
+</div>
+<div class="submitbox">
+<input type="submit" value="Submit">
+</div>
+</form></section>
+</html>

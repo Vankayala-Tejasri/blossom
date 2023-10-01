@@ -1,0 +1,91 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	font-family:garamond,serif;
+}
+#regform{
+	display:flex;
+	height:100vh;
+	justify-content:center;
+	align-items:center;
+	background-size:800px 900px;
+	background-size:cover;
+}
+.container{
+	width:100%;
+	max-width:650px;
+	background:url("https://i.pinimg.com/736x/10/34/45/1034459a703ef6f5ca242b8f43239e3c.jpg");
+	opacity:0.9;
+	padding:28px;
+	margin:0 28px;
+	border:1px solid white;
+	border-radius:10px;
+	box-shadow:inset -px 2px 2px white;
+}
+.form-title{
+	font-size:26px;
+	font-family:garamond,serif;
+	text-align:center;
+	padding-bottom:6px;
+	color:black;
+	border-bottom:solid 1px black;
+}
+.main-user-info{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+	padding:20px 0;
+}
+.user-input-box:nth-child(2n){
+	justify-content:end;
+}
+.user-input-box{
+	display:flex;
+	flex-wrap:wrap;
+	width:50%;
+	padding-bottom:15px;
+}
+.user-input-box label{
+	width:95%;
+	color:balck;
+	font:garamond,serif;
+	font-size:20px;
+	margin:5px 0;
+}
+.user-input-box input{
+	font-size:15px;
+	height:40px;
+	width:85%;
+	border:1px solid grey;
+	border-radius:4px;
+	outline:none;
+	padding:0 10px;
+}
+.gender-title{
+	color:black;
+	font-size:20px;
+	font-weight:400;
+}
+.gen{
+	padding:10px;
+	margin:15px 0;
+	color:black;
+}
+.submitbox{
+	display:flex;
+	justify-content:space-between;
+}
+.submitbox input{
+	font-size:20px;
+	display:block;
+	width:45%;
+	margin-top:10px ;
+	font-size:20px;
+	padding:10px 5px;
+	border:1px solid grey;
+	border-radius:4px;
+	
+}
+
+	
